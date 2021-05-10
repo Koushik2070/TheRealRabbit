@@ -1,0 +1,79 @@
+<DOCTYPE! html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+	<link rel="icon" href="photos/Logo.png"  type="image/icon type">
+	<link rel="stylesheet" href="login-or-signup.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<title>The Rabbit - Log In or Sign Up</title>	
+  </head>
+  <body>
+	<div class="container">
+		<div class="card">
+			<div class="inner-box" id='card'>
+				<div class="card-front">
+				
+				<h2>LOG IN</h2>
+				<form>
+				<input class='input-box' type='email' name='email' placeholder='Enter Your Email' required>
+				<input class='input-box' type='password' name='pwd' placeholder='Enter Your Password'>
+				
+				<p><button class='submit-btn' type="submit">Log In </button></p>
+				</form><br>
+				<p>Don't have an account?<button class='btn' onclick='openSignUp()'>Sign Up</button>
+				<br><br><a class='btnF' href='#'>Forgotten password</a>
+				</p>
+				</div>
+				<div class="card-back">
+				<h2>SIGN UP</h2>
+				<form>
+				<input class='input-box' type='text' name='name' placeholder='Enter Your Name'>
+				<input class='input-box' type='email' name='email' placeholder='Enter Your Email' required>
+				<input class='input-box' type='password' name='pwd' placeholder='Create Password'>
+				<input class='input-box' type='password' name='con-pwd' placeholder='Conform Password'>
+				<p>By signing up, you agree to our  <a href='#'>Terms and Condition</a></p>
+				<p><button class='submit-btn' type="submit">Sign Up </button></p>
+				</form>
+				<p>Already have an account? <button class='btn' onclick='openLogIn()'>Log In</button></p>
+				</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	
+	var card = document.getElementById("card");
+	
+	function openSignUp(){
+		card.style.transform = "rotateY(-180deg)";
+	}
+	function openLogIn(){
+		card.style.transform = "rotateY(0deg)";
+	}
+	</script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+	<script>
+	
+	const options = {
+	  bottom: '40px', // default: '32px'
+	  right: '32px', // default: '32px'
+	  left: 'unset', // default: 'unset'
+	  time: '0.6s', // default: '0.3s'
+	  mixColor: '#fff', // default: '#fff'
+	  backgroundColor: '#b9b9ca',  // default: '#fff'
+	  buttonColorDark: '#100f2c',  // default: '#100f2c'
+	  buttonColorLight: '#fff', // default: '#fff'
+	  saveInCookies: true, // default: true,
+	  label: '🌞 🌙', // default: ''
+	  autoMatchOsTheme: false // default: true
+	}
+
+	const darkmode = new Darkmode(options);
+	darkmode.showWidget();
+	</script>
+  </body>
