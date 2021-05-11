@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name='viewport'
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+  <link rel="icon" href="photos/TheRabbit.png"  type="image/icon type">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+  <title>The Rabbit - About Page</title>
+  </head>
+  <body>
+    <section class="header">
+    <nav>
+      <a href="index.html"><img class="logo" src="photos/TheRabbit.png"/></a>
+      <div id="nav-links">
+      <img onclick='hideMenu()' class="bar close" src='photos/close.png'>
+        <ul>
+          <li><a href='index.html'>HOME</a></li>
+          <li><a href='about.html'>ABOUT</a></li>
+          <li><a href='#services'>SERVICE</a></li>
+          <li><a href='log-in.html'>LOG IN</a></li>
+          <li><a href='sign-up.html'>SIGN UP</a></li>
+        </ul>
+
+      </div>
+      <img onclick='openMenu()' class="bar menu" src='photos/menu.png'>
+    </nav>
+    <div class="text-box">
+  	<h1>WE MAKE YOUR ONLINE BUSINESS EASY</h1>
+  	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>It has been the  industry's standard dummy text.</p><br>
+  	</div>
+    <img id="scroll" src="photos/sd.gif">
+    </section>
+
+    <section class="footer">
+  		<div class="container">
+  			<div class="footer-row">
+  				<span class="footer-titles">CONTACT INFO</span><br><br>
+  				<span class="footer-p">Address :</span><br>
+  				<span class="footer-pn">Rajbari Sadar,Rajbari,Bangladesh</span><br>
+  				<span class="footer-p">Phone :</span><br>
+  				<span class="footer-pn">+8801XXXXXXXXX</span><br>
+  				<span class="footer-p">E-mail :</span><br>
+  				<span class="footer-pn">therabbit@zohomail.com</span><br><br>
+
+  				<a href="https://twitter.com/RabbitBusiness" target="blank"><img class="social" src="photos/Twitter-icon-black.png"/></a>
+  				<a href="https://twitter.com/RabbitBusiness" target="blank"><img class="social" src="photos/LinkedIn-icon-black.png"/></a>
+  				<a href="https://www.facebook.com/itzrabbit02" target="blank"><img class="social" src="photos/Facebook-icon-black.png"/></a>
+
+  			</div>
+  			<div class="footer-row footer-pn-text">
+  				<span class="footer-titles">SUBSCRIBE NEWSLETTER</span><br><br>
+  				<span class="footer-pn">Get our latest information on events,sales,offers,updated facilities etc. Subscribe our newsletter down here.</span><br>
+  				<div id="inputFiled">
+  				<br/>
+  				<input type="text" name="email"" placeholder="Enter Email Address"/>
+  				</div>
+  				<div class="submitButton">
+  				<input type="Submit" value="SUBSCRIBE"/>
+  				</div>
+
+  			</div>
+  			<div class="footer-row">
+  				<span class="footer-titles spacial">THE RABBIT</span><br><br>
+  				<a href='#' class="footer-a spacial">About The Rabbit</a><br>
+  				<a href='#' class="footer-a spacial">Services</a><br>
+  				<a href='#' class="footer-a spacial">Careers</a><br>
+  				<a href='#' class="footer-a spacial">Partnership Program</a><br>
+  				<a href='#' class="footer-a spacial">Advertise With Us</a>
+  			</div>
+  			<div class="footer-row">
+  				<span class="footer-titles spacial">HELPS & FAQS</span><br><br>
+  				<a href='#' class="footer-a spacial">Service System</a><br>
+  				<a href='#' class="footer-a spacial">Support System</a><br>
+  				<a href='#' class="footer-a spacial">Partnership Program</a><br>
+  				<a href='#' class="footer-a spacial">Advertise With Us</a><br>
+  				<a href='#' class="footer-a spacial">Others</a>
+  			</div>
+  		</div>
+  	</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  	<script>
+
+  	const options = {
+  	  bottom: '64px', // default: '32px'
+  	  right: '32px', // default: '32px'
+  	  left: 'unset', // default: 'unset'
+  	  time: '0.6s', // default: '0.3s'
+  	  mixColor: '#fff', // default: '#fff'
+  	  backgroundColor: '#b9b9ca',  // default: '#fff'
+  	  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  	  buttonColorLight: '#fff', // default: '#fff'
+  	  saveInCookies: true, // default: true,
+  	  label: '🌞 🌙', // default: ''
+  	  autoMatchOsTheme: false // default: true
+  	}
+
+  	const darkmode = new Darkmode(options);
+  	darkmode.showWidget();
+  	</script>
+  	<script>
+  		var navLinks = document.getElementById("nav-links");
+  		function openMenu(){
+  			navLinks.style.right="0";
+  		}
+  		function hideMenu(){
+  			navLinks.style.right="-200px";
+  		}
+
+  	</script>
+  </body>
+</html>
