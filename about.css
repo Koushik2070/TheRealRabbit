@@ -403,7 +403,7 @@ h1{
 }
 @media(max-width: 350px){
 	.content p{
-		margin: 1rem;
+		margin: 0.5rem;
 		font-size:16px;
 	}
 	.aboutUs{
