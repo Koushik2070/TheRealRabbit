@@ -334,3 +334,8 @@ nav img{
 }
 
 }
+@media(max-width: 350px){
+	.footer-row{
+		height:315px;
+	}
+}
