@@ -167,7 +167,7 @@ p,button{
 	height:100%;
 	background-position:center;
 	background-size:cover;
-	background-image:url(../photos/loginbg.jpg);
+	background-image:url(photos/loginbg.jpg);
 	opacity:1;
 	padding:55px;
 	box-sizing:border-box;
