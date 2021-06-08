@@ -34,19 +34,25 @@ p,button{
 	height:100%;
 	background-position:center;
 	background-size:cover;
-	background-image:url(photos/loginbg.jpg);
-	opacity:0.6;
+	background-image:url(../photos/loginbg.jpg);
 	padding:55px;
+	border-radius:1rem;
 	box-sizing:border-box;
 	backface-visibility:hidden;
 }
 .card-back{
 	transform:rotateY(180deg);
 }
+.card{
+	border-radius:1rem;
+}
 .card h2{
 	text-align:center;
 	font-weight:normal;
 	margin: 0 0 15px 0;
+}
+.log-in-card{
+	margin-top: 3rem;
 }
 .input-box{
 	width:100%;
@@ -63,6 +69,9 @@ p,button{
 }
 ::placeholder{
 	color:lightgreen;
+}
+.ruleP{
+	font-size:14px;
 }
 a{
 	color:#05d0d0;
@@ -109,11 +118,155 @@ button{
 	color:lightgreen;
 	text-decoration:underline;
 }
+.errorMsg{
+	color: red;
+	font-size:23px;
+	font-family:arial;
+	background:#ffffff6e;
+}
+.successrMsg{
+	color: green;
+	font-size:23px;
+	font-family:arial;
+	background:#ffffff6e;
+}
 
+*{margin:0;padding:0;font-family: 'Poppins', sans-serif;}
+html, body { height: 100%;background: #fff;}
+p,button{
+	text-align:center;
+}
+.container{
+	width:100%;
+	height:100vh;
+	background:#cec896;
+	color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.card{
+	width:350px;
+	max-width:100%;
+	height:500px;
+	box-shadow: 0 0 40px 20px #c5b0b0;
+	perspective:1000px
+}
+.inner-box{
+	position:relative;
+	width:100% !important;
+	height:100%;
+	transition:transform 1s;
+	overflow: visible !important;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.card-front,.card-back{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:cover;
+	background-image:url(../photos/loginbg.jpg);
+	opacity:1;
+	padding:55px;
+	box-sizing:border-box;
+	backface-visibility:hidden;
+}
+.card-back{
+	transform:rotateY(180deg);
+}
+.card h2{
+	text-align:center;
+	font-weight:normal;
+	margin: 0 0 15px 0;
+}
+.input-box{
+	width:100%;
+	background:transparent;
+	border:1px solid #fff;
+	margin:5px 0;
+	height:30px;
+	border-radius:25px;
+	padding:0 8px;
+	box-sizing:border-box;
+	outline:none;
+	text-align:center;
+	color:#fff;
+}
+::placeholder{
+	color:lightgreen;
+}
+.ruleP{
+	font-size:14px;
+}
+a{
+	color:#05d0d0;
+}
+button{
+	width:50%;
+	color:#fff;
+	margin:12px 0 10px;
+	height:30px;
+	font-size:14px;
+	border-radius:20px;
+	border:1px solid #fff;
+	padding:0 10px;
+	box-sizing:border-box;
+	outline:none;
+	cursor:pointer;
+}
+.submit-btn{
+	background:#26ef5a7a;
+	position:relative;
+}
+.submit-btn::after{
+	content: ' \27a4';
+	line-height:28px;
+	color:#333;
+	font-size:17px;
+	height:28px;
+	width:28px;
+	border-radius:50%;
+	background:#fff;
+	position:absolute;
+	right:-1px;
+	top:-1px;
+}
+.btn{
+	background:#38b8e87a;
+}
 
+.btnF{
+	text-decoration:none;
+	color:#eae307;
+}
+.btnF:hover{
+	color:lightgreen;
+	text-decoration:underline;
+}
+.errorMsg{
+	color: red;
+	font-size:23px;
+	font-family:arial;
+	background:#ffffff6e;
+}
+.successrMsg{
+	color: green;
+	font-size:23px;
+	font-family:arial;
+	background:#ffffff6e;
+}
 
 .darkmode-toggle{
-	bottom:30px;right: 28px;width: 3.3rem;height: 3.3rem;z-index:1;
+	right: 26px !important;width: 3.3rem !important;height: .3.5rem !important;z-index:1;
+    bottom: 1.2rem !important;
+}
+
+@media(max-width: 300px){
+
+button{
+	width:65%;
 }
 
 @media(max-width: 300px){
