@@ -84,9 +84,9 @@ nav{
 }
 #scroll{
 	width: 75px;
-    position: absolute;
-    top: 90%;
-    left: 50%;
+	position: absolute;
+        top: 90%;
+        left: 50%;
 	transform:translate(-50%,-50%);
     text-align: center;
 }
@@ -282,7 +282,7 @@ nav{
 #nav-links{
 	position:absolute;
 	height:100vh;
-	background:#ddd;
+	background:#111311;
 	width:200px;
 	top:0;
 	right:-200px;
